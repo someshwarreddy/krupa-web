@@ -1,0 +1,169 @@
+.krupa-class {
+   color: green; 
+}
+
+#krupa-id {
+    color:red ;
+}
+
+/* attribute selector */
+
+a[title]{
+    color:red
+}
+
+a[href="https://someshwarreddy.com/about"]{
+    color: red;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+ /* exact match */
+p[class $="a"]{
+    color: blue;
+}
+
+p[ class *="a"] {
+    color: red;
+    font-size: 30px;
+}
+
+/* searches start character */
+p[class ^="a"]{
+    color: green;
+    font-size: 30px;
+}
+
+p[class ~="c"]{
+    color: black;
+    font-size: 50px;
+}
+
+
+/* pseudo class : and pseudo  elements :: */
+
+
+a:hover {
+     color: yellowgreen;
+}
+a:active {
+    color: blue;
+}
+p {
+    /* border: 10px solid khaki;
+    padding: 100px;
+    font-size: 200px; */
+    border: 5px solid yellow;
+}
+
+/* a:visited {
+    color: black;
+} */
+input:focus {
+   border: none;
+   outline: none;
+}
+/* p {
+    border: 5px solid yellow;
+    padding: 10px;
+    font-size: 20px;
+} */
+
+/* p::after {
+    color: red;
+    content: 'i am after content';
+   
+}
+p::before {
+    color: red;
+    content: 'i am before content';
+} */
+
+/* combinators */
+/* Descendant combinator  denoted by space */
+div p {
+    color: aqua;
+}
+
+/* child combinator */ 
+
+.child-combinator > h1{
+    font-size: 40px ;
+    color:blueviolet
+}
+
+.child-combinator ~ h1{
+    font-size: 40px ;
+    color:red
+}
+.child-combinator + h1{
+    font-size: 40px ;
+    color:green
+}
+
+.overflow {
+    width: 400px;
+    height: 50px;
+    border-width: 2px;
+    border-color: red;
+    border-radius: 5px;
+    border-style: dashed;
+    overflow-x: scroll;
+  word-break: keep-all; 
+}
+
+.units div {
+    border: 2px solid red;
+    margin-bottom: 20px ;
+}
+/*  units  */
+/* px */
+#pixcels {
+    width:200px;
+}
+/* viewport width */
+#vw {
+    width: 10vw;
+}
+
+#vh {
+    height: 20vh;
+}
+
+#percentage {
+    width: 50%;
+}
+
+.width-fixed {
+    border: 2px solid red;
+    width:600px;
+    height: 150px;
+    overflow: hidden;
+    /* Handling different text directions */
+    writing-mode:vertical-lr
+}
+/* min-height max-height  min-width max-width*/
+
+.min-width {
+    border: 2px solid red;
+    margin-top: 100px;
+    width:200px;
+    min-height: 150px; 
+    /* Handling different text directions */
+    writing-mode: vertical-rl;
+}
+
+
+
+
+.max-width {
+    border: 2px solid red;
+    margin-top: 100px;
+    width:300px;
+    height: 150px; 
+    /* writing-mode:vertical-rl */
+}
+/* responsive image */
+img {
+    max-width: 100%;
+    height: 100%;
+}
