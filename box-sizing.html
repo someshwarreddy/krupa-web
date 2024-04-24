@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <!-- internal -->
+    <style>
+        div {
+            border: 2px solid red;
+            padding: 20px;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .box-sizing {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        i am no box sizing
+    </div>
+    <div class="box-sizing">
+        i am box sizing
+    </div>
+</body>
+
+</html>
