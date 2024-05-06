@@ -8,56 +8,153 @@
     <style>
         * {
             margin: 0;
-            padding: 0;;
+            padding: 0;
+            ;
         }
+
         .display {
             display: none;
             border: 2px solid #ff0000;
             /* visibility: hidden; */
         }
+
         .position {
-            position:relative;
+            position: relative;
             background-color: rgb(85, 214, 214);
             width: 100%;
-          
-          
+
+
         }
+
         .content {
             height: 600px;
             width: 600px;
         }
+
+        table {
+            margin: 0 auto;
+            border: 2px solid rgb(224, 16, 16);
+            border-collapse: collapse;
+            width:500px;
+           
+        }
+
+        .two tbody tr:nth-child(even) {
+            /* background-color: pink; */
+            border: 2px solid black;
+        }
+
+        .two tbody tr:nth-child(odd) {
+            /* background-color: green; */
+            border: 2px solid black;
+        }
+
+        /* .one tr:nth-child(even) {
+            background-color: pink;
+        }
+
+        .one tr:nth-child(odd) {
+            background-color: green;
+        }
+
+        .one td:nth-child(2n+1) {
+            background-color: rgb(191, 204, 215);
+        } */
     </style>
 </head>
 
 <body>
-    <!-- <table  border="1">
-        
+    <table  class="one">
         <tr>
-            <td> column 1</td>
-            <td> column 2</td>
-            <td> column 3</td>
+            <th>&nbsp</th>
+            <th>coloumn2</th>
+            <th>coloumn3</th>
+            <th>coloumn4</th>
         </tr>
         <tr>
-            <td> column 1</td>
-            <td> column 2</td>
-            <td> column 3</td>
+            <th>name</th>
+            <td>c2</td>
+            <td>c3</td>
+            <td>c4</td>
         </tr>
         <tr>
-            <td> column 1</td>
-            <td> column 2</td>
-            <td> column 3</td>
+
+            <th>gender</th>
+            <td>c2</td>
+            <td>c3</td>
+            <td>c4</td>
         </tr>
         <tr>
-            <td> column 1</td>
-            <td> column 2</td>
-            <td> column 3</td>
+
+            <th>year</th>
+            <td>c2</td>
+            <td>c3</td>
+            <td>c4</td>
         </tr>
-        thead
-        tbody
-        tfoot
-        th
-        col span 
-     </table> -->
+        <tr>
+
+            <th>year</th>
+            <td>c2</td>
+            <td>c3</td>
+            <td>c4</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">somename</th>
+        </tr>
+        <tr>
+            <th colspan="2">some name second</th>
+        </tr>
+        <tr>
+            <th rowspan="2">name three</th>
+            <td>related to three name</td>
+        </tr>
+        <tr>
+            <td>related to three name</td>
+        </tr>
+        <tr>
+            <th colspan="2">four</th>
+        </tr>
+    </table>
+    <table class="two">
+        <colgroup>
+            <col> targets column 1
+            <!-- <col style="background-color: red;">
+        <col style="background-color: green;"> -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col"> &nbsp</th>
+                <th scope="col">name </th>
+                <th scope="col">id</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="3">total</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row">number</th>
+                <td>somesh</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th scope="row">number</th>
+                <td>somesh</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th scope="row">number</th>
+                <td>somesh</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+
+    </table>
 
 
     <!-- postions -->
@@ -65,39 +162,57 @@
     <!-- fixed -->
     <!-- relative -->
     <!-- absoulte -->
-<!--  how to hide element in css -->
+    <!--  how to hide element in css -->
     <div class="display">
         i am display
     </div>
-   
-<div class="content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae odit! Iusto?
-</div>
-<div class="content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae odit! Iusto?
-</div>
-<div class="content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae odit! Iusto?
-</div>
 
-<div class="content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae odit! Iusto?
-</div>
-<div class="position">
-    i am positined;
-</div>
-<div class="content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae odit! Iusto?
-</div>
-<div class="content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae odit! Iusto?
-</div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi
+        dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil
+        voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae
+        odit! Iusto?
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi
+        dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil
+        voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae
+        odit! Iusto?
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi
+        dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil
+        voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae
+        odit! Iusto?
+    </div>
+
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi
+        dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil
+        voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae
+        odit! Iusto?
+    </div>
+    <div class="position">
+        i am positined;
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi
+        dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil
+        voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae
+        odit! Iusto?
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda accusantium iusto eligendi excepturi
+        dolorum sit nostrum ab, harum vitae, facilis ad ratione sequi veniam! Veritatis eum tempore labore distinctio?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi totam repellat quis optio nihil
+        voluptas dignissimos ipsam et iusto debitis asperiores perferendis, rerum, distinctio omnis repellendus quae
+        odit! Iusto?
+    </div>
 
 </body>
 
