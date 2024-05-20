@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-background {
+            width: 100%;
+            background-color: #a2d2ff;
+            margin: 0 auto;
+         
+        }
+
+        .nav {
+            padding: 0 20em;
+        }
+
+        .navbar {
+            display: flex;
+            /* justify-content: space-between; */
+            line-height: 1;
+            flex-wrap: wrap;
+          
+          
+        }
+       
+
+        .navbar li {
+            list-style: none;
+           
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: #023047;
+            background: #2a9d8f;
+            padding: .5rem;
+            border-radius: 5px
+        }
+
+        .navbar li a:hover {
+            color: #bc4821;
+        }
+
+        .navbar-right {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+
+        }
+
+        .navbar-right li, .logo {
+            margin: 1rem;  
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar-background">
+        <nav class="nav">
+            <ul class="navbar">
+                <div class="logo"><a href="/">logo</a></div>
+                <div class="navbar-right">
+                    <li><a href="flex.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="gallary.html">gallary</a></li>
+                    <li> <button type="button">button</button></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

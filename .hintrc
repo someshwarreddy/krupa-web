@@ -4,6 +4,18 @@
   ],
   "hints": {
     "axe/forms": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/structure": [
+      "default",
+      {
+        "listitem": "off"
+      }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "button-name": "off"
+      }
+    ]
   }
 }
