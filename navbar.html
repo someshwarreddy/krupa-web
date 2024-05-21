@@ -14,12 +14,13 @@
         .navbar-background {
             width: 100%;
             background-color: #a2d2ff;
-            margin: 0 auto;
-         
         }
 
-        .nav {
-            padding: 0 20em;
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            /* border-left: 2px solid red;
+            border-right: 2px solid red; */
         }
 
         .navbar {
@@ -27,15 +28,11 @@
             /* justify-content: space-between; */
             line-height: 1;
             flex-wrap: wrap;
-          
-          
         }
-       
 
-        .navbar li {
+
+        .navbar li, .footer li {
             list-style: none;
-           
-
         }
 
         .navbar a {
@@ -58,27 +55,109 @@
 
         }
 
-        .navbar-right li, .logo {
-            margin: 1rem;  
+        .navbar-right li,
+        .logo {
+            margin: 1rem;
         }
+
+        .gallary {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            flex-basis: 250px;
+            border-radius: 5px;
+            min-height: 250px;
+            border: 1px solid greenyellow;
+            margin-top: 1rem;
+
+        }
+
+        .footer {
+            background-color: #023047;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
     </style>
 </head>
 
 <body>
+
     <header class="navbar-background">
-        <nav class="nav">
-            <ul class="navbar">
-                <div class="logo"><a href="/">logo</a></div>
-                <div class="navbar-right">
-                    <li><a href="flex.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                    <li><a href="gallary.html">gallary</a></li>
-                    <li> <button type="button">button</button></li>
-                </div>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <ul class="navbar">
+                    <div class="logo"><a href="/">logo</a></div>
+                    <div class="navbar-right">
+                        <li><a href="flex.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="gallary.html">gallary</a></li>
+                        <!-- <li> <button type="button">button</button></li> -->
+                    </div>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <div class="container">
+        <div class="gallary">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">4</div>
+        </div>
+      <div class="gallary contact">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="page-footer-nav-col-1">
+            <h2 class="footer-nav-heading">MDN</h2>
+            <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="/en-US/about">About</a></li>
+                <li class="footer-nav-item"><a href="/en-US/blog/">Blog</a></li>
+                <li class="footer-nav-item"><a href="https://www.mozilla.org/en-US/careers/listings/?team=ProdOps"
+                        target="_blank" rel="noopener noreferrer">Careers</a></li>
+                <li class="footer-nav-item"><a href="/en-US/advertising">Advertise with us</a></li>
+            </ul>
+        </div>
+        <div class="page-footer-nav-col-1">
+            <h2 class="footer-nav-heading">MDN</h2>
+            <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="/en-US/about">About</a></li>
+                <li class="footer-nav-item"><a href="/en-US/blog/">Blog</a></li>
+                <li class="footer-nav-item"><a href="https://www.mozilla.org/en-US/careers/listings/?team=ProdOps"
+                        target="_blank" rel="noopener noreferrer">Careers</a></li>
+                <li class="footer-nav-item"><a href="/en-US/advertising">Advertise with us</a></li>
+            </ul>
+        </div>
+        <div class="page-footer-nav-col-1">
+            <h2 class="footer-nav-heading">MDN</h2>
+            <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="/en-US/about">About</a></li>
+                <li class="footer-nav-item"><a href="/en-US/blog/">Blog</a></li>
+                <li class="footer-nav-item"><a href="https://www.mozilla.org/en-US/careers/listings/?team=ProdOps"
+                        target="_blank" rel="noopener noreferrer">Careers</a></li>
+                <li class="footer-nav-item"><a href="/en-US/advertising">Advertise with us</a></li>
+            </ul>
+        </div>
+        <div class="page-footer-nav-col-1">
+            <h2 class="footer-nav-heading">MDN</h2>
+            <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="/en-US/about">About</a></li>
+                <li class="footer-nav-item"><a href="/en-US/blog/">Blog</a></li>
+                <li class="footer-nav-item"><a href="https://www.mozilla.org/en-US/careers/listings/?team=ProdOps"
+                        target="_blank" rel="noopener noreferrer">Careers</a></li>
+                <li class="footer-nav-item"><a href="/en-US/advertising">Advertise with us</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
