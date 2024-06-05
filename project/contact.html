@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        .productive-section {
+            background-color: rgb(210, 225, 225);
+            display: flex;
+            padding: 1rem;
+        }
+
+        .productive-details {
+            flex-basis: 50%;
+        }
+
+        .link::after {
+            content: "*";
+        }
+
+        .product-img {
+            /* width:300px; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            max-width: 250px;
+            padding: 1rem;
+            
+            background-color: #ffffff;
+            box-shadow: 10px 10px 5px 0px rgba(190,210,218,0.75);
+        }
+
+        .person-details {
+            display: flex;
+        }
+
+        .avatar {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .img {
+            max-width: 100%;
+            ;
+        }
+
+        .productive-details-one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="productive-section">
+            <div class="productive-details">
+                <h1> state productive</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempora atque quod eaque enim error
+                    nostrum, est corporis dolores incidunt iure ipsam fuga blanditiis cum assumenda sint accusantium
+                    libero earum.</p>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus molestias nulla maxime
+                    consequatur impedit aliquid. Quibusdam dolores soluta, cupiditate accusamus labore quas atque iste
+                    dignissimos ipsa illo debitis reprehenderit officiis.</p>
+                <a href="#" class="link">link</a>
+                <div class="card">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis natus aut consequatur et,
+                        error libero aperiam reprehenderit exercitationem, eum blanditiis! Fugiat itaque, ipsa est ut
+                        omnis reprehenderit nisi dignissimos.</p>
+                    <div class="person-details">
+                        <img src="images/image.png" alt="img" class="avatar">
+                        <div>
+                            <h3>name</h3>
+                            <p>designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productive-details productive-details-one">
+                <div class="product-img">
+                    <img src="images/image.png" alt="img" class="img">
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
