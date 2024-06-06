@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            /* color: #ffffff; */
+            text-align: center;
+        }
+
+        .one {
+            background-color: red;
+            z-index: 3;
+            left: 10px
+        }
+
+        .two {
+            background-color: yellow;
+            z-index: 2;
+            left: 20px;
+        }
+
+        .three {
+            background-color: black;
+            z-index: 1;
+            left: 30px;
+        }
+
+        .dropdown {
+            display: none;
+        }
+
+        .link:hover+  .dropdown {
+            display: block;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div> -->
+    <ul>
+        <li>
+            <a href="#" class="link">
+                link
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">dropdown</a>
+                    </li>
+                </ul>
+            </a>
+        </li>
+    </ul>
+
+</body>
+
+</html>
