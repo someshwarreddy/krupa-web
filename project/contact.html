@@ -14,11 +14,13 @@
         .productive-section {
             background-color: rgb(210, 225, 225);
             display: flex;
+            flex-wrap: wrap;
             padding: 1rem;
         }
 
         .productive-details {
-            flex-basis: 50%;
+            flex-basis: 100%;
+          
         }
 
         .link::after {
@@ -51,13 +53,24 @@
 
         .img {
             max-width: 100%;
-            ;
+        }
+        .productive-details-one {
+            order: -1;
         }
 
         .productive-details-one {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        @media (min-width:426px) {
+            .productive-details {
+            flex-basis: 50%;
+          
+        }
+        .productive-details-one {
+            order: 1;
+        }
         }
     </style>
 </head>
