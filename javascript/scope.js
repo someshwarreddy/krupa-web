@@ -12,7 +12,8 @@ function named() {
     console.log(varglobalValue);
     console.log(varfumctionValue);  
 };
-
+const a ="name";
+ a=10;
 var unnamed = function() {
     var varfumctionValue = 'i am var functionvalue';
     let varglobalValue= 'i am function re assgined value ';

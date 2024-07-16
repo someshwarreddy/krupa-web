@@ -50,3 +50,28 @@ function b(){
 }
 
 
+var a=2;
+var b=5;
+var c= 100;
+
+if (c==1001){
+    console.log('i am block of if statement value 10');
+}
+else if(c==99){
+    console.log(' i am else if block value 100');
+}
+else {
+    console.log(' i am else  value 1000');
+}
+var discount= false;
+
+if(discount) {
+    console.log('288');
+}
+else {
+    console.log(1300)
+}
+                    //true                      // false
+//(condition) ? (variable = Expression2) : (variable = Expression3);
+
+discount ? console.log(1000) : console.log(2000);
