@@ -40,7 +40,23 @@ function testPromise() {
         })
         .catch((error) => { console.log(error) })
 
+
 }
 
+function fetchData1() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.error(`There was an error: ${error}`));
+}
+
+
+async function fetchData2() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await response.json();
+    console.log(data);
+}
+fetchData1();
+fetchData2();
 const btn = document.getElementById("make-promise");
 btn.addEventListener("click", testPromise);
