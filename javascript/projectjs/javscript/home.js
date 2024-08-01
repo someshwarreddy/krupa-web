@@ -25,15 +25,18 @@ async function productsAll() {
 function allusers(data) {
     let cardContent = "";
     let products = document.getElementById('products');
+    console.log(data)
     data.forEach(element => {
         console.log(element)
         cardContent += `
         <div class="card mt-4 ms-4 border-info " style="width: 18rem;">
-      <img src="${element.image}" class="card-img-top" alt="${element.title}">
+        <div class="img-container">
+      <img src="${element.image}" class="card-img-top card-img" alt="${element.title}">
+      </div>
       <div class="card-body">
         <h5 class="card-title">${element.title}</h5>
         <p class="card-text">${element.description}</p>
-        <a href="topbrands.html" class="btn btn-primary">details</a>
+        <a onclick="product(${element.id})" class="btn btn-primary">details</a>
       </div>
     </div>`
   
@@ -53,14 +56,19 @@ searchTermcheck.addEventListener('blur', (e) => {
 })
 
 serchitem.addEventListener('click', (e) => {
-    e.preventDefault()
+     e.preventDefault()
     let searchTerm = document.querySelector('.form-control').value;
-    searchvalue = searchTerm;
-    document.querySelector('.form-control').value = searchTerm;
+    // searchvalue = searchTerm;
+    //document.querySelector('.form-control').value = searchTerm;
     let fiterarray = products.filter((element) => element.title.toLowerCase().includes(searchTerm.toLowerCase()) || element.id === +searchTerm);
     allusers(fiterarray);
 })
 
 function errorhandler(error) {
     alert(error)
+}
+
+function product(id) {
+    localStorage.setItem("id", id); //webstorage
+    window.location.href = 'http://127.0.0.1:5500/javascript/projectjs/product.html' // linking   to  selected productdetails page
 }
